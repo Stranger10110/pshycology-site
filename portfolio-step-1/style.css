@@ -1,7 +1,7 @@
 body {
   margin: 0;
   min-width: 960px;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: cursive;
   font-size: 16px;
   line-height: 32px;
   color: #222222;
@@ -57,10 +57,10 @@ body {
 
 .heading {
   margin: 0 0 16px;
-  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+  font-family: 'Comfortaa', "Old Standard TT", "Times", "Times New Roman", serif;
   font-size: 88px;
   line-height: 96px;
-  font-weight: 400;
+  /*font-weight: 400;*/
 }
 
 .hero-image p {
@@ -75,10 +75,10 @@ body {
 
 .subheading {
   margin: 0 0 56px;
-  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+  font-family: 'Comfortaa', "Old Standard TT", "Times", "Times New Roman", serif;
   font-size: 64px;
   line-height: 80px;
-  font-weight: 400;
+  /*font-weight: 400;*/
   text-align: center;
 }
 
