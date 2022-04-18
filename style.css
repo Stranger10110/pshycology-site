@@ -30,20 +30,10 @@ body {
 
 .page-header a {
   margin-left: 56px;
-  color: #288be6;
+  color: #000000;
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: left;
-}
-
-.header-email {
-  padding-left: 30px;
-  background-image: url("img/icon-email-header.svg");
-}
-
-.header-phone {
-  padding-left: 25px;
-  background-image: url("img/icon-phone-header.svg");
 }
 
 .hero-image {
@@ -165,14 +155,14 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
-  background-color: #288be6;
-  color: #ffffff;
+  background-color: #b2a2ae;
+  color: #000000;
 }
 
 .page-footer {
   padding: 40px 0;
-  background-color: #00417d;
-  color: #ffffff;
+  background-color: #b3a3ae;
+  color: #000000;
 }
 
 .page-footer a {
@@ -181,14 +171,4 @@ body {
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: left;
-}
-
-.footer-email {
-  padding-left: 30px;
-  background-image: url("img/icon-email-footer.svg");
-}
-
-.footer-phone {
-  padding-left: 25px;
-  background-image: url("img/icon-phone-footer.svg");
 }
