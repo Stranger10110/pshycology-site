@@ -99,14 +99,6 @@ body {
   background-position: left;
 }
 
-.skill-html {
-  background-image: url("img/icon-html.svg");
-}
-
-.skill-css {
-  background-image: url("img/icon-css.svg");
-}
-
 .level {
   margin: 4px 0 16px;
   padding: 0;
@@ -126,16 +118,7 @@ body {
 
 .portfolio {
   margin: 0 0 120px;
-}
-
-.projects {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.projects li {
-  margin: 0 0 80px;
+  text-align: center;
 }
 
 .project-image {
@@ -143,8 +126,9 @@ body {
   text-align: center;
 }
 
-.projects p {
-  margin: 0 0 24px;
+.project-image img {
+  width: 868px;
+  height: auto;
 }
 
 .button {
