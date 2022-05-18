@@ -166,6 +166,28 @@ img {
   background-position: left;
 }
 
+.fa-brands,
+.fa-regular {
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+.fa-html5 {
+  color: orangered;
+}
+
+.fa-css3-alt {
+  color: #288be6;
+}
+
+.fa-python {
+  color: #36971c;
+}
+
+.fa-file-code {
+  color: #1c5a97;
+}
+
 @media screen and (max-width: 890px) {
   .heading {
     font-size: 77px;
@@ -214,10 +236,6 @@ img {
 }
 
 @media screen and (max-width: 360px) {
-  .heading {
-    font-size: 30px;
-  }
-
   .subheading {
     font-size: 35px;
   }
