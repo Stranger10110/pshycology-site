@@ -59,7 +59,7 @@ img {
 .heading {
   margin: 0 0 16px;
   font-family: 'Comfortaa', "Old Standard TT", "Times", "Times New Roman", serif;
-  font-size: 88px;
+  font-size: 9vw;
   line-height: 1.5;
   /*font-weight: 400;*/
 }
@@ -77,7 +77,7 @@ img {
 .subheading {
   margin: 0 0 56px;
   font-family: 'Comfortaa', "Old Standard TT", "Times", "Times New Roman", serif;
-  font-size: 64px;
+  font-size: 9vw;
   line-height: 1.3;
   /*font-weight: 400;*/
   text-align: center;
@@ -188,61 +188,12 @@ img {
   color: #1c5a97;
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (min-width: 900px) {
   .heading {
-    font-size: 77px;
-  }
-}
-
-@media screen and (max-width: 785px) {
-  .heading {
-    font-size: 70px;
-  }
-}
-
-@media screen and (max-width: 715px) {
-  .heading {
-    font-size: 60px;
-  }
-}
-
-@media screen and (max-width: 620px) {
-  .heading,
-  .subheading {
-    font-size: 50px;
-  }
-}
-
-@media screen and (max-width: 520px) {
-  .heading {
-    font-size: 40px;
-  }
-}
-
-@media screen and (max-width: 435px) {
-  .heading {
-    font-size: 35px;
+    font-size: 88px;
   }
 
   .subheading {
-    font-size: 40px;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .heading {
-    font-size: 30px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .subheading {
-    font-size: 35px;
-  }
-}
-
-@media screen and (max-width: 330px) {
-  .heading {
-    font-size: 29px;
+    font-size: 80px;
   }
 }
