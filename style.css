@@ -240,3 +240,11 @@ button:hover {
     font-size: 80px;
   }
 }
+
+@media screen and (max-width: 430px) {
+  .skills > div {
+    flex: 80%;
+    justify-content: start;
+    margin-bottom: 15px;
+  }
+}
