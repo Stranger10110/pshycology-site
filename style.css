@@ -200,6 +200,7 @@ button {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: #ffffff;
+  background-color: #232323;
   text-align: center;
   transition: all 0.2s;
 }
