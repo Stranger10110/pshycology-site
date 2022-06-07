@@ -55,13 +55,11 @@ document.querySelector('#sort-skills').addEventListener('click', (e) => {
     if (e.target.tagName === 'BUTTON') {
         switch ([...e.target.classList].join(', ')) {
             case 'sort-skills-by-level':
-                console.log('boba 1');
                 skills.data.sort(skills.compareByLevelDescending);
                 e.target.classList.toggle('ascending');
                 break;
 
             case 'sort-skills-by-level, ascending':
-                console.log('boba 2');
                 skills.data.sort(skills.compareByLevelAscending);
                 e.target.classList.toggle('ascending');
                 break;
