@@ -19,17 +19,17 @@ const skills = {
         this.skillsList.innerHTML = '';
 
         this.data.forEach(e => {
-            const skill = document.createElement('dt');
-            const level = document.createElement('dd');
-            const level_data = document.createElement('div');
-            const icon = document.createElement('i');
+            const skill = document.createElement('dt'),
+                  level = document.createElement('dd'),
+                  levelData = document.createElement('div'),
+                  icon = document.createElement('i');
 
             skill.className = `skill-${e.name}`;
             skill.innerText = ` ${e.name.replace(/^\w/, (c) => c.toUpperCase())}`; // Capitalize string
 
             level.className = `level`;
-            level_data.style.width = `${e.level}%`;
-            level_data.innerText = level_data.style.width;
+            levelData.style.width = `${e.level}%`;
+            levelData.innerText = levelData.style.width;
 
             let addition = '';
             switch (e.name) {
@@ -44,7 +44,7 @@ const skills = {
             this.skillsList.append(skill);
             skill.prepend(icon);
             this.skillsList.append(level);
-            level.append(level_data);
+            level.append(levelData);
         })
     }
 }
