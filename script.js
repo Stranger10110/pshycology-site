@@ -9,11 +9,9 @@ const skills = {
 
     compareByLevelAscending: (a, b) => a.level - b.level,
     compareByLevelDescending: (a, b) => b.level - a.level,
-    compareByName: (a, b) => {
-        if (a.name > b.name) { return 1; }
-        if (a.name < b.name) { return -1; }
-        return 0;
-    },
+
+    compareByNameAscending: (a, b) => skills.compareByLevelDescending(b, a),
+    compareByNameDescending: (a, b) => a.name.localeCompare(b.name),
 
     generateList: function () {
         this.skillsList.innerHTML = '';
@@ -65,8 +63,13 @@ document.querySelector('#sort-skills').addEventListener('click', (e) => {
                 break;
 
             case 'sort-skills-by-name':
-                console.log('boba 3');
-                skills.data.sort(skills.compareByName);
+                skills.data.sort(skills.compareByNameAscending);
+                e.target.classList.toggle('descending');
+                break;
+
+            case 'sort-skills-by-name, descending':
+                skills.data.sort(skills.compareByNameDescending);
+                e.target.classList.toggle('descending');
 
         }
         skills.generateList();
