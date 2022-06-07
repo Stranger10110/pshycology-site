@@ -10,7 +10,7 @@ const skills = {
     compareByLevelAscending: (a, b) => a.level - b.level,
     compareByLevelDescending: (a, b) => b.level - a.level,
 
-    compareByNameAscending: (a, b) => skills.compareByLevelDescending(b, a),
+    compareByNameAscending: (a, b) => skills.compareByNameDescending(b, a),
     compareByNameDescending: (a, b) => a.name.localeCompare(b.name),
 
     generateList: function () {
