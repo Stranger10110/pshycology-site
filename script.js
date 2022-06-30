@@ -1,10 +1,5 @@
 const skills = {
-    data: [
-        {name: 'html', level: 85},
-        {name: 'css', level: 75},
-        {name: 'python', level: 95},
-        {name: 'c', level: 90}
-    ],
+    data: null,
     skillsList: document.querySelector('dl.skills-list'),
 
     compareByLevelAscending: (a, b) => a.level - b.level,
@@ -47,31 +42,39 @@ const skills = {
     }
 }
 
-skills.generateList();
+function generateSkills(json) {
+    skills.data = json
+    skills.generateList();
 
-document.querySelector('#sort-skills').addEventListener('click', (e) => {
-    if (e.target.tagName === 'BUTTON') {
-        switch ([...e.target.classList].join(', ')) {
-            case 'sort-skills-by-level':
-                skills.data.sort(skills.compareByLevelDescending);
-                e.target.classList.toggle('ascending');
-                break;
+    document.querySelector('#sort-skills').addEventListener('click', (e) => {
+        if (e.target.tagName === 'BUTTON') {
+            switch ([...e.target.classList].join(', ')) {
+                case 'sort-skills-by-level':
+                    skills.data.sort(skills.compareByLevelDescending);
+                    e.target.classList.toggle('ascending');
+                    break;
 
-            case 'sort-skills-by-level, ascending':
-                skills.data.sort(skills.compareByLevelAscending);
-                e.target.classList.toggle('ascending');
-                break;
+                case 'sort-skills-by-level, ascending':
+                    skills.data.sort(skills.compareByLevelAscending);
+                    e.target.classList.toggle('ascending');
+                    break;
 
-            case 'sort-skills-by-name':
-                skills.data.sort(skills.compareByNameAscending);
-                e.target.classList.toggle('descending');
-                break;
+                case 'sort-skills-by-name':
+                    skills.data.sort(skills.compareByNameAscending);
+                    e.target.classList.toggle('descending');
+                    break;
 
-            case 'sort-skills-by-name, descending':
-                skills.data.sort(skills.compareByNameDescending);
-                e.target.classList.toggle('descending');
+                case 'sort-skills-by-name, descending':
+                    skills.data.sort(skills.compareByNameDescending);
+                    e.target.classList.toggle('descending');
 
+            }
+            skills.generateList();
         }
-        skills.generateList();
-    }
-})
+    })
+}
+
+fetch('db/skills.json')
+    .then(data => data.json())
+    .then(json => generateSkills(json))
+    .catch(() => console.error('Что-то пошло не так...'))
