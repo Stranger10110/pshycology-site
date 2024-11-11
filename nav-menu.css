@@ -76,7 +76,7 @@ body {
         padding: 0.75rem 1rem;
         background-color: #F2CC8F;  /* rbt */
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        position: fixed;
+        position: fixed;  /* rbt - это закрепляет навигацию наверху */
         z-index: 10000;
     }
     #cs-navigation:before {
@@ -303,10 +303,10 @@ body {
         width: 100%;
         /* prevents padding and border from affecting height and width */
         box-sizing: border-box;
-        padding: 0 5rem;
+        padding: 0 4rem;  /* rbt */
         background-color: #F2CC8F;  /* rbt */
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        position: fixed;
+        position: fixed;  /* rbt - это закрепляет навигацию наверху */
         z-index: 10000;
     }
     #cs-navigation .cs-container {
