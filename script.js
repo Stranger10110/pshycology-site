@@ -1,80 +1,33 @@
-const skills = {
-    data: null,
-    skillsList: document.querySelector('dl.skills-list'),
+// add classes for mobile navigation toggling
+var CSbody = document.querySelector('body');
+const CSnavbarMenu = document.querySelector('#cs-navigation');
+const CShamburgerMenu = document.querySelector('#cs-navigation .cs-toggle');
 
-    compareByLevelAscending: (a, b) => a.level - b.level,
-    compareByLevelDescending: (a, b) => b.level - a.level,
+CShamburgerMenu.addEventListener('click', function () {
+    CShamburgerMenu.classList.toggle('cs-active');
+    CSnavbarMenu.classList.toggle('cs-active');
+    CSbody.classList.toggle('cs-open');
+    // run the function to check the aria-expanded value
+    ariaExpanded();
+});
 
-    compareByNameAscending: (a, b) => skills.compareByNameDescending(b, a),
-    compareByNameDescending: (a, b) => a.name.localeCompare(b.name),
+// checks the value of aria expanded on the cs-ul and changes it accordingly whether it is expanded or not
+function ariaExpanded() {
+    const csUL = document.querySelector('#cs-expanded');
+    const csExpanded = csUL.getAttribute('aria-expanded');
 
-    generateList: function () {
-        this.skillsList.innerHTML = '';
-
-        this.data.forEach(e => {
-            const skill = document.createElement('dt'),
-                  level = document.createElement('dd'),
-                  levelData = document.createElement('div'),
-                  icon = document.createElement('i');
-
-            skill.className = `skill-${e.name}`;
-            skill.innerText = ` ${e.name.replace(/^\w/, (c) => c.toUpperCase())}`; // Capitalize string
-
-            level.className = `level`;
-            levelData.style.width = `${e.level}%`;
-            levelData.innerText = levelData.style.width;
-
-            let addition = '';
-            switch (e.name) {
-                case 'html':
-                    addition = '5'; break;
-                case 'css':
-                    addition = '3-alt';
-            }
-            icon.classList.add(e.name != 'c' ? `fa-brands` : 'fa-regular',
-                               `fa-${e.name != 'c' ? e.name : 'file-code'}${addition}`);
-
-            this.skillsList.append(skill);
-            skill.prepend(icon);
-            this.skillsList.append(level);
-            level.append(levelData);
-        })
+    if (csExpanded === 'false') {
+        csUL.setAttribute('aria-expanded', 'true');
+    } else {
+        csUL.setAttribute('aria-expanded', 'false');
     }
 }
 
-function generateSkills(json) {
-    skills.data = json
-    skills.generateList();
-
-    document.querySelector('#sort-skills').addEventListener('click', (e) => {
-        if (e.target.tagName === 'BUTTON') {
-            switch ([...e.target.classList].join(', ')) {
-                case 'sort-skills-by-level':
-                    skills.data.sort(skills.compareByLevelDescending);
-                    e.target.classList.toggle('ascending');
-                    break;
-
-                case 'sort-skills-by-level, ascending':
-                    skills.data.sort(skills.compareByLevelAscending);
-                    e.target.classList.toggle('ascending');
-                    break;
-
-                case 'sort-skills-by-name':
-                    skills.data.sort(skills.compareByNameAscending);
-                    e.target.classList.toggle('descending');
-                    break;
-
-                case 'sort-skills-by-name, descending':
-                    skills.data.sort(skills.compareByNameDescending);
-                    e.target.classList.toggle('descending');
-
-            }
-            skills.generateList();
-        }
-    })
+// mobile nav toggle code
+const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropdown'));
+for (const item of dropDowns) {
+    const onClick = () => {
+        item.classList.toggle('cs-active');
+    };
+    item.addEventListener('click', onClick);
 }
-
-fetch('db/skills.json')
-    .then(data => data.json())
-    .then(json => generateSkills(json))
-    .catch(() => console.error('Что-то пошло не так...'))
