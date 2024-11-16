@@ -86,6 +86,10 @@ img {
   background-color: #484b6a;
 }
 
+.telegram-button .fa-brands {
+  font-size: 32px;
+}
+
 
 /* Education -------------------------------- */
 
@@ -221,75 +225,7 @@ img {
 
 /* WIP -------------------------------- */
 
-.user-image {
-  margin: 0 0 32px;
-  text-align: center;
-}
 
-.intro h3,
-.portfolio h3 {
-  margin: 0 0 12px;
-  font-size: 28px;
-  line-height: 1.3;
-  font-weight: 500;
-}
-
-.intro p {
-  margin: 0 0 32px;
-}
-
-.skills-list {
-  margin: 0;
-  padding: 0;
-}
-
-.skills-list dt {
-  background-repeat: no-repeat;
-  background-position: left;
-}
-
-.level {
-  margin: 4px 0 16px;
-  padding: 0;
-  height: 14px;
-  font-size: 0;
-  background-color: #080208;
-  border: 1px solid #712073;
-  border-radius: 8px;
-}
-
-.level div {
-  margin: 1px;
-  height: 12px;
-  background-color: #fea18d;
-  border-radius: 6px;
-}
-
-.portfolio {
-  margin: 0 0 120px;
-  text-align: center;
-}
-
-.project-image {
-  margin: 0 0 24px;
-  text-align: center;
-}
-
-.project-image img {
-  width: 868px;
-  height: auto;
-}
-
-.button {
-  padding: 6px 20px;
-  display: inline-block;
-  vertical-align: baseline;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 4px;
-  background-color: #712073;
-  color: #ffffff;
-}
 
 .page-footer {
   padding: 40px 0;
@@ -302,68 +238,4 @@ img {
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: left;
-}
-
-.fa-brands,
-.fa-regular {
-  font-size: 30px;
-  vertical-align: middle;
-}
-
-.fa-html5 {
-  color: orangered;
-}
-
-.fa-css3-alt {
-  color: #288be6;
-}
-
-.fa-python {
-  color: #36971c;
-}
-
-.fa-file-code {
-  color: #1c5a97;
-}
-
-button {
-  display: inline-block;
-  cursor: pointer;
-  padding: 0.6em 1.7em;
-  border: 0.1em solid #ffffff;
-  margin: 0 0.3em 0.3em 0;
-  border-radius: 0.12em;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  color: #ffffff;
-  background-color: #232323;
-  text-align: center;
-  transition: all 0.2s;
-}
-
-button:hover {
-  color: #000000;
-  background-color: #ffffff;
-}
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.skills > h3 {
-  flex: 50%;
-}
-
-.skills > div {
-  flex: 50%;
-
-  display: flex;
-  justify-content: end;
-}
-
-.skills > dl {
-  flex: 100%;
 }
