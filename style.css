@@ -39,7 +39,7 @@ img {
 
 .main-description {
   padding-top: 100px;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 
 .main-description>.container {
@@ -47,7 +47,8 @@ img {
 }
 
 .main-img {
-  width: 100%;
+    display: flex;
+    width: 100%;
 }
 
 .main-text {
@@ -112,12 +113,14 @@ img {
   margin: 0;
 }
 
+
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions/Using_CSS_transitions#transitioning_display_and_content-visibility*/
 .gallery {
     display: flex;
     justify-content: center;
 
     height: 100%;
-    align-items: center;
+    /*align-items: center;*/
 
     transition: all 1s;
 }
@@ -125,9 +128,19 @@ img {
 .gallery img {
     width: 70%;
     display: none;
+
+    opacity: 0;
+    transition: opacity .2s linear;
 }
 .gallery img.active {
     display: block;
+
+    opacity: 1;
+}
+@starting-style {
+    .gallery img.active {
+        opacity: 0;
+    }
 }
 
 .arrow {
