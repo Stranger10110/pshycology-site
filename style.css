@@ -193,6 +193,32 @@ img {
 }
 
 
+/* Prices -------------------------------- */
+
+.prices {
+  margin-bottom: 20px;
+}
+
+.prices>.container {
+  flex-direction: column;
+}
+
+.prices-heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.prices-heading>.heading {
+  font-size: 36px;
+}
+
+.price-cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
 /* WIP -------------------------------- */
 
 .user-image {
