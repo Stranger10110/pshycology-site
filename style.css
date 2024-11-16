@@ -39,7 +39,7 @@ img {
 
 .main-description {
   padding-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 .main-description>.container {
@@ -84,6 +84,70 @@ img {
 }
 .telegram-button:active {
   background-color: #484b6a;
+}
+
+
+/* Education -------------------------------- */
+
+.education>.container {
+  gap: 1.5rem;
+  min-height: 300px;
+}
+
+.edu-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 50%;
+  max-width: 50%;
+  align-items: center;
+}
+
+.gallery-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-container button {
+  margin: 0;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+
+    height: 100%;
+    align-items: center;
+
+    transition: all 1s;
+}
+
+.gallery img {
+    width: 70%;
+    display: none;
+}
+.gallery img.active {
+    display: block;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    z-index: 10;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
 }
 
 
