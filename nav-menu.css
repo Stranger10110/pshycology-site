@@ -1,6 +1,6 @@
 :root {
     /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-    --primary: #E07A5F;
+    --primary: #F2CC8F;
     --primaryLight: #ffba43;
     --secondary: #ffba43;
     --secondaryLight: #ffba43;
@@ -74,7 +74,7 @@ body {
         /* prevents padding and border from affecting height and width */
         box-sizing: border-box;
         padding: 0.75rem 1rem;
-        background-color: #F2CC8F;  /* rbt */
+        background-color: #81B29A;  /* rbt */
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         position: fixed;  /* rbt - это закрепляет навигацию наверху */
         z-index: 10000;
@@ -308,7 +308,7 @@ body {
         /* prevents padding and border from affecting height and width */
         box-sizing: border-box;
         padding: 0 4rem;  /* rbt */
-        background-color: #F2CC8F;  /* rbt */
+        background-color: #81B29A;  /* rbt */
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         position: fixed;  /* rbt - это закрепляет навигацию наверху */
         z-index: 10000;

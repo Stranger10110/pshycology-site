@@ -24,7 +24,7 @@ img {
   margin: 0 auto 0 0;
   font-family: 'Comfortaa', "Old Standard TT", "Times", "Times New Roman", serif;
   font-size: 1.5em;
-  align-content: center;
+  /*align-content: center;*/
   /*font-weight: 400;*/
 }
 
