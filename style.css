@@ -4,7 +4,7 @@ body {
   margin: 0;
   min-width: 320px;
   font-family: 'Neucha', cursive;
-  font-size: 16px;
+  font-size: 22px;
   line-height: 1.3;
   color: #3D405B;
   background-color: #F4F1DE;
@@ -23,7 +23,7 @@ img {
 .heading {
   margin: 0 auto 0 0;
   font-family: 'Comfortaa', "Old Standard TT", "Times", "Times New Roman", serif;
-  font-size: 1.5em;
+  font-size: 24px;
   /*align-content: center;*/
   /*font-weight: 400;*/
 }
@@ -59,7 +59,6 @@ img {
 
 .main-description p {
   margin: 0;
-  font-size: 22px;
   line-height: 1.3;
 }
 
@@ -89,6 +88,10 @@ img {
 
 
 /* Education -------------------------------- */
+
+.education {
+    margin-bottom: 10px;
+}
 
 .education>.container {
   gap: 1.5rem;
@@ -146,7 +149,7 @@ img {
 .arrow {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 43%;
     width: auto;
     padding: 10px;
     color: white;
