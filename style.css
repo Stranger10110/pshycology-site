@@ -10,6 +10,10 @@ body {
   background-color: #F4F1DE;
 }
 
+section {
+  margin-bottom: 35px;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -20,16 +24,31 @@ img {
   object-fit: contain;
 }
 
+p {
+  margin: 0;
+}
+
+a {
+  color: #3D405B
+}
+
+.heading-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .heading {
   margin: 0 auto 0 0;
   font-family: 'Comfortaa', "Old Standard TT", "Times", "Times New Roman", serif;
-  font-size: 24px;
+  font-size: 32px;
   /*align-content: center;*/
   /*font-weight: 400;*/
 }
 
 .container {
-  max-width: 928px;
+  max-width: 1095px;
+  /*max-width: 80%;*/
   margin: 0 auto;
   display: flex;
 }
@@ -37,27 +56,33 @@ img {
 
 /* Main description -------------------------------- */
 
-.main-description {
+#main-description {
   padding-top: 100px;
-  margin-bottom: 10px;
 }
 
-.main-description>.container {
-  gap: 1.5rem;
+#main-description>.container {
+  gap: 20px;
 }
 
 .main-img {
-    display: flex;
-    width: 100%;
+  display: flex;
+  min-width: 40%;
+  max-width: 40%;
+  /*align-items: flex-start;*/
+}
+
+.main-text > .heading {
+  font-size: 31px;
 }
 
 .main-text {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  font-size: 21px;
 }
 
-.main-description p {
+#main-description p {
   margin: 0;
   line-height: 1.3;
 }
@@ -93,27 +118,36 @@ img {
 
 /* Education -------------------------------- */
 
-.education {
-    margin-bottom: 10px;
+/*#education .heading-container {*/
+/*  margin-bottom: 5px;*/
+/*}*/
+
+#education > .container {
+  flex-direction: column;
 }
 
-.education>.container {
-  gap: 1.5rem;
-  min-height: 300px;
+#education .container:nth-child(2) {
+  min-height: 660px;  /* чтобы блок не прыгал, когда меняется картинка */
+  gap: 25px;
 }
 
 .edu-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 50%;
-  max-width: 50%;
+  min-width: 47%;
+  max-width: 47%;
   align-items: center;
+  gap: 40px;
+}
+
+.edu-text ul {
+  margin: 0;
 }
 
 .gallery-container {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .gallery-container button {
@@ -127,13 +161,13 @@ img {
     justify-content: center;
 
     height: 100%;
-    /*align-items: center;*/
+    align-items: center;
 
     transition: all 1s;
 }
 
 .gallery img {
-    width: 70%;
+    width: 84%;
     display: none;
 
     opacity: 0;
@@ -171,71 +205,93 @@ img {
 }
 
 
-/* Type of work -------------------------------- */
+/* Types of work -------------------------------- */
 
-.types-of-work {
-  margin-bottom: 20px;
-}
-
-.types-of-work>.container {
+#types-of-work > .container {
   flex-direction: column;
+  gap: 10px;
 }
 
-.work-heading {
-  width: 100%;
+#types-of-work > .container > p {
   text-align: center;
-  margin-bottom: 20px;
 }
 
-.work-heading>.heading {
-  font-size: 36px;
-}
+/* TODO: remove */
+/*  margin-bottom: 30px;*/
+/*}*/
+/*#types-of-work > .container > p:last-child {*/
+/*  margin-bottom: 0;*/
+/*}*/
 
 .work-types {
   display: flex;
   justify-content: space-evenly;
+  text-align: center;
+}
+
+.work-types div {
+  flex: 1 0 calc(25% - 10px);
+}
+.work-types p:nth-child(1) {
+  margin: 0;
+}
+.work-types p:nth-child(2) {
+  margin: 0 1px 20px;
 }
 
 
-/* Prices -------------------------------- */
+/* About approach -------------------------------- */
 
-.prices {
-  margin-bottom: 20px;
-}
-
-.prices>.container {
+#about-approach > .container {
   flex-direction: column;
 }
 
-.prices-heading {
-  width: 100%;
+
+
+/* Price and booking -------------------------------- */
+
+#price-and-booking > .container {
+  flex-direction: column;
+  gap: 20px;
+}
+
+#price-and-booking > .container > p {
   text-align: center;
-  margin-bottom: 20px;
+}
+/*  margin-bottom: 30px;*/
+/*}*/
+/*#price-and-booking > .container > p:nth-child(2) {*/
+/*  margin-bottom: 10px;*/
+/*}*/
+/*#price-and-booking > .container > p:nth-child(5), p:last-child {*/
+/*  margin-bottom: 0;*/
+/*}*/
+
+/*#price-and-booking .fa-ruble-sign {*/
+/*  font-size: 16px;*/
+/*}*/
+
+
+/* First time -------------------------------- */
+
+#first-time > .container {
+  flex-direction: column;
+  text-align: center;
 }
 
-.prices-heading>.heading {
-  font-size: 36px;
+
+/* Kinda footer -------------------------------- */
+
+#footer {
+  margin-top: 200px;
 }
 
-.price-cards {
-  display: flex;
-  justify-content: space-evenly;
+#footer > .container {
+  flex-direction: column;
+  align-items: center;
 }
 
-
-/* WIP -------------------------------- */
-
-
-
-.page-footer {
-  padding: 40px 0;
-  background-color: #260c26;
-}
-
-.page-footer a {
-  margin-left: 56px;
-  color: #fea18d;
-  text-decoration: none;
-  background-repeat: no-repeat;
-  background-position: left;
+#footer img {
+  min-width: 40%;
+  max-width: 40%;
 }

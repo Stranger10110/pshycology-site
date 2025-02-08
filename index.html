@@ -39,24 +39,40 @@
           <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
           <div class="cs-ul-wrapper">
             <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+              <!-- rbt: remove cs-active -->
               <li class="cs-li">
-                <a href="" class="cs-li-link">  <!-- rbt: remove cs-active -->
+                <a href="#types-of-work" class="cs-li-link">
+                  <i class="fa-solid fa-comment-dots"></i> Запрос
+                </a>
+              </li>
+              <li class="cs-li">
+                <a href="#about-approach" class="cs-li-link">
+                  <i class="fa-solid fa-book-open"></i> О подходе
+                </a>
+              </li>
+              <li class="cs-li">
+                <a href="#education" class="cs-li-link">
+                  <i class="fa-solid fa-graduation-cap"></i> Образование
+                </a>
+              </li>
+              <li class="cs-li">
+                <a href="#price-and-booking" class="cs-li-link">
+                  <i class="fa-solid fa-money-bill"></i> Стоимость
+                </a>
+              </li>
+              <li class="cs-li">
+                <a href="#price-and-booking" class="cs-li-link">
+                  <i class="fa-solid fa-calendar-check"></i> Запись
+                </a>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-li-link">
                   <i class="fa-solid fa-scale-balanced"></i> Правила работы
                 </a>
               </li>
               <li class="cs-li">
                 <a href="" class="cs-li-link">
-                  <i class="fa-solid fa-graduation-cap"></i> Образование
-                </a>
-              </li>
-              <li class="cs-li">
-                <a href="" class="cs-li-link">
-                  <i class="fa-solid fa-money-bill"></i> Стоимость
-                </a>
-              </li>
-              <li class="cs-li">
-                <a href="" class="cs-li-link">
-                  <i class="fa-solid fa-calendar-check"></i> Запись
+                  <i class="fa-solid fa-note-sticky"></i> Заметки
                 </a>
               </li>
             </ul>
@@ -70,103 +86,260 @@
       </div>
     </header>
 
-    <section class="main-description">
+    <section id="main-description">
       <div class="container">
         <div class="main-img">
-          <img src="files/user.jpg" alt="Нефедова А.В." >
+<!--          <img src="files/anzhelika.jpg" alt="Нефедова А.В.">-->
+          <img src="files/anzhelika_2.png" alt="Нефедова А.В.">
         </div>
 
         <div class="main-text">
           <h1 class="heading">
-            <u>Текст 1.</u> Какой-то типо заголовок. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Привет! Меня зовут Анжелика,<br>
+            я психолог и нарративный практик
           </h1>
           <p>
-            <u>Текст 2.</u> Какое-то описание. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            Порой разобраться в себе и своих переживаниях бывает очень сложно – мысли путаются в клубок, чувства
+            поглощают и окрашивают всё вокруг в безнадёжные тона, а страхи возвышаются неподступными скалами и мешают
+            двигаться вперёд. Я здесь, чтобы помочь распутаться, включить и подержать фонарь, предложить разные
+            тропинки и вывести в местечко поприятнее :)
           </p>
           <p>
-            Ещё чего-нибудь на последок. Биба боба.
+            Я знаю, что внутри каждого человека есть то, что может поддерживать, вдохновлять и вести вперёд.
+            Но иногда эти важные вещи оказываются скрыты под слоем сомнений, страха осуждения или слишком высоких
+            ожиданий от себя. В своей работе я создаю пространство, где можно исследовать себя, находить новые смыслы
+            и переоткрывать старые – собирать свою историю так, чтобы она была про вас и за вас, а не против.
+            Это не про поиск «правильного» пути, а про возвращение к себе и к тому, что действительно для вас ценно.
           </p>
-
-          <div class="telegram-button-div">
-            <a class="telegram-button" href="https://t.me/meo4ko" target="_blank">
-              <i class="fa-brands fa-telegram"></i>
-              <span>meo4ko</span>
-            </a>
-          </div>
+          <p>
+            Здесь нет готовых советов или универсальных решений, но зато есть много внимания и поддержки в поиске
+            решений, подходящих именно для вас!
+          </p>
         </div>
       </div>
     </section>
 
-    <section class="education">
+    <section id="types-of-work">
       <div class="container">
-        <div class="edu-text">
-          <h2 class="heading">
-            <u>Образование</u> Какой-то типо заголовок. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </h2>
-          <p>
-            <u>Текст 2.</u> Какое-то описание. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-          </p>
+        <div class="heading-container">
+          <h2 class="heading">С какими запросами я работаю?</h2>
         </div>
 
-        <div class="gallery-container">
+        <p>Чаще всего ко мне обращаются со следующими трудностями:</p>
+
+        <div class="work-types">
+          <div>
+            <p><b>Неуверенность в себе</b></p>
+            <p>
+              • «Чувствую себя ничтожным»<br>
+              • «Постоянно сравниваю себя с другими»<br>
+              • «Чужое мнение может меня просто растоптать»
+            </p>
+          </div>
+          <div>
+            <p><b>Давящая самокритика</b></p>
+            <p>
+              • «Чувствую себя недостаточным»<br>
+              • «Не могу позволить себе ошибиться»<br>
+              • «Если у меня нет никаких достижений, я бесполезен»
+            </p>
+          </div>
+          <div>
+            <p><b>Страх принятия решений</b></p>
+            <p>
+              • «Боюсь сделать неправильный выбор и пожалеть»<br>
+              • «Не могу понять, чего действительно хочу»
+            </p>
+          </div>
+        </div>
+
+        <div class="work-types">
+          <div>
+            <p><b>Откладывание дел</b></p>
+            <p>
+              • «Не могу заставить себя что-то делать – даже то, что нравится»<br>
+              • «Всё время откладываю всё до последнего дня»<br>
+              • «Никак не получается делать сразу – чувствую, что теряюсь во времени»
+            </p>
+          </div>
+          <div>
+            <p><b>Сильные эмоции</b></p>
+            <p>
+              • «Не могу понять, почему я так сильно реагирую на что-то»<br>
+              • «Не могу справиться со своей злостью»<br>
+              • «Чувствую много напряжения внутри, но не понимаю, что с этим делать»
+            </p>
+          </div>
+          <div>
+            <p><b>Потеря смысла</b></p>
+            <p>
+              • «Не могу понять, что для меня действительно важно – ради чего я вообще что-то делаю?»<br>
+              • «Чувствую себя потерянным и не знаю, как найти опору в жизни»
+            </p>
+          </div>
+        </div>
+
+        <p>
+          Но если вы не нашли в этом списке отражения своей проблемы, вы всё равно можете написать мне –<br>
+          я буду рада познакомиться с вами и помочь в разрешении ваших трудностей.
+        </p>
+        <p>
+          <b>Обратите внимание!</b><br>
+          Я <u>не работаю</u> с подростками до 18 лет; с проблемами химических зависимостей; с проблемами, связанными
+          с расстройствами пищевого поведения. <u>Осторожно отношусь</u> к работе с психиатрическими диагнозами,
+          если вы не находитесь в ремиссии и / или не поддерживаете контакт с врачом-психиатром.
+        </p>
+      </div>
+    </section>
+
+    <section id="about-approach">
+      <div class="container">
+        <div class="heading-container">
+          <h2 class="heading">О подходе</h2>
+        </div>
+        <p>
+          <b>Нарративная практика</b> – это подход, в котором человек рассматривается не через призму своих проблем,
+          а как автор собственной жизненной истории. Мы не ищем в вас «дефекты» и не навешиваем ярлыки – вместо этого
+          мы исследуем, какие истории о себе вы привыкли рассказывать и какие из них мешают вам двигаться вперёд.
+          Главный инструмент психолога в этом подходе – вопросы, задаваемые с искренним любопытством.
+          <br><br>
+          Проблема – это не то, что вам изначально внутренне присуще. Не ваша «природа» или неизменяемое «личностное
+          свойство». Проблема – это только проблема. В нарративной беседе можно посмотреть на неё со стороны, оспорить
+          её влияние и обнаружить в себе силу писать свою историю иначе – так, как вам действительно откликается.
+        </p>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <div class="heading-container">
+          <h2 class="heading">Образование</h2>
+        </div>
+
+        <div class="container">
+          <div class="edu-text">
+            <div>
+              <u>Основное образование:</u>
+              <ul>
+                <li>Обучаюсь на 5 курсе факультета психологии МГУ имени М.В. Ломоносова (2020-2026)</li>
+              </ul>
+            </div>
+
+            <div>
+              <u>Обучение в подходе:</u>
+              <ul>
+                <li>Базовая программа обучения нарративной практике (2023-2024)</li>
+                <li>Методы работы с травмой в нарративной практике (2024)</li>
+              </ul>
+            </div>
+
+            <div>
+              <u>Краткосрочные программы по темам:</u>
+              <ul>
+                <li>«Длительная терапия в нарративной практике» (2024)
+                <li>«Работа с людьми, имеющими психиатрические диагнозы» (2025)
+              </ul>
+            </div>
+          </div>
+
+          <div class="gallery-container">
             <div class="gallery">
-                <img src="files/user.jpg" alt="Image 1">
-                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/d11.png" alt="Image 2">
-<!--                <img src="files/user.jpg" alt="Image 3">-->
+              <img src="files/education/1.png" alt="Image 1">
+              <img src="files/education/2.png" alt="Image 2">
+              <img src="files/education/3.png" alt="Image 3">
+              <img src="files/education/4.png" alt="Image 4">
             </div>
             <button class="arrow left" onclick="prevImage()">&#10094;</button>
             <button class="arrow right" onclick="nextImage()">&#10095;</button>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="types-of-work">
+    <section id="price-and-booking">
       <div class="container">
-        <div class="work-heading">
-          <h2 class="heading">С какими запросами я работаю?</h2>
+        <div class="heading-container">
+          <h2 class="heading">Cтоимость и запись</h2>
         </div>
+
+        <p>Встречи проходят <b>онлайн</b> через Google Meet:</p>
+
         <div class="work-types">
           <div>
-            <p>Текст</p> <p>текст</p>
+            <p><b>Встреча-знакомство</b></p>
+            <p>
+              • бесплатно<br>
+              • 30 минут<br>
+              • познакомимся, обсудим ваш запрос и ваши ожидания
+            </p>
           </div>
           <div>
-            <p>Текст</p> <p>текст</p>
-          </div>
-          <div>
-            <p>Текст</p> <p>текст</p>
-          </div>
-          <div>
-            <p>Текст</p> <p>текст</p>
+            <p><b>Сессия</b></p>
+            <p>
+              • 1500 <i class="fa-solid fa-ruble-sign"></i><br>
+              • 60-70 минут
+            </p>
           </div>
         </div>
+
+        <p><u>Правила работы</u> (ссылка) <i style="color: red">(пока не делать)</i></p>
+
+        <p>
+          <br><b>Записаться на встречу:</b><br>
+          Для записи свяжитесь со мной в Telegram
+          (<a href="https://t.me/meo4ko" target="_blank">@meo4ko</a>)
+          или напишите на почту
+          (<a href="mailto:anzhelika.nefedova.v@mail.ru" target="_blank">anzhelika.nefedova.v@mail.ru</a>).
+          <br>
+          С февраля по май я работаю только по средам и субботам с 12:00 до 20:00, но связаться со мной можно в любой день.
+        </p>
       </div>
     </section>
 
-    <section class="prices">
+    <section id="first-time">
       <div class="container">
-        <div class="prices-heading">
-          <h2 class="heading">Стоимость сессий</h2>
+        <div class="heading-container">
+          <h2 class="heading">Что нужно знать, если я обращаюсь в первый раз?</h2>
         </div>
-        <div class="price-cards">
-          <div>
-            <p>Текст <i class="fa-solid fa-ruble-sign"></i></p> <p>текст</p>
-          </div>
-          <div>
-            <p>Текст <i class="fa-solid fa-ruble-sign"></i></p> <p>текст</p>
-          </div>
-          <div>
-            <p>Текст <i class="fa-solid fa-ruble-sign"></i></p> <p>текст</p>
-          </div>
-        </div>
+
+        <p>
+          <i style="color: red">(пока не делать)</i><br>
+          <a href="https://t.me/meo4ko" target="_blank">Как подготовиться к первой сессии?</a> (ссылка)<br>
+          <a href="https://t.me/meo4ko" target="_blank">Как будет проходить работа с психологом?</a> (ссылка)<br>
+          <a href="https://t.me/meo4ko" target="_blank">Как и какие изменения происходят в ходе терапии?</a> (ссылка)<br>
+        </p>
       </div>
     </section>
 
-    <footer class="page-footer">
+
+    <section id="footer">
       <div class="container">
-        <a class="footer-phone" href="tel:+79175149576"><i class="fa-solid fa-phone"></i> +7 917 514 95 76</a>
+        <p><b>Это может быть долгий путь,</b></p>
+        <img src="files/bee.png" alt="bee">
+        <p><b>но вы уже сделали первый шаг! :)</b></p>
       </div>
-    </footer>
+    </section>
+
+
+<!--      <div class="telegram-button-div">-->
+<!--        <a class="telegram-button" href="https://t.me/meo4ko" target="_blank">-->
+<!--          <i class="fa-brands fa-telegram"></i>-->
+<!--          <span>meo4ko</span>-->
+<!--        </a>-->
+<!--      </div>-->
+
+<!--    <footer class="page-footer">-->
+<!--      <div class="container">-->
+
+<!--&lt;!&ndash;        <div class="telegram-button-div">&ndash;&gt;-->
+<!--          <a class="telegram-button" href="https://t.me/meo4ko" target="_blank">-->
+<!--            <i class="fa-brands fa-telegram"></i>-->
+<!--            <span>meo4ko</span>-->
+<!--          </a>-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+
+<!--      </div>-->
+<!--    </footer>-->
+
   </body>
 </html>
