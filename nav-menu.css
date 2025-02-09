@@ -318,7 +318,7 @@ body {
         max-width: 80rem;
         margin: auto;
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         align-items: center;
         gap: 1.5rem;
     }
@@ -360,8 +360,7 @@ body {
         flex: none;
     }
     #cs-navigation .cs-li-link {
-        /* 18px - 20px */
-        font-size: clamp(1.125rem, 1.5vw, 1.25rem);
+        font-size: 22px;  /* rbt */
         line-height: 1.5em;
         text-decoration: none;
         margin: 0;
