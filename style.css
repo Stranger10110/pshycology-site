@@ -53,6 +53,12 @@ a {
   display: flex;
 }
 
+hr {
+  max-width: 1095px;
+  border-top: 3px solid #bbb;
+  margin-bottom: 25px;
+}
+
 
 /* Main description -------------------------------- */
 
@@ -211,8 +217,13 @@ a {
   gap: 10px;
 }
 
+#types-of-work .heading-container {
+  margin: 0;
+}
+
 #types-of-work > .container > p {
   text-align: center;
+  margin-bottom: 10px;
 }
 
 /* TODO: remove */
@@ -226,6 +237,14 @@ a {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
+}
+
+#types-of-work .work-types p:nth-child(2n+1) {
+  color: #C57D69;
+}
+
+#types-of-work .work-types p:nth-child(2n) {
+  font-size: 17px;
 }
 
 .work-types div {
