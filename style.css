@@ -277,15 +277,10 @@ hr {
 
 #price-and-booking > .container > p {
   text-align: center;
-  font-size: 28px;
 }
 
 #price-and-booking > .container > p:nth-child(2) {
   margin-bottom: 10px;
-}
-
-#price-and-booking .work-types {
-  font-size: 28px;
 }
 
 #price-and-booking .work-types div:nth-child(1) p {
@@ -300,7 +295,7 @@ hr {
 }
 
 #price-and-booking .fa-ruble-sign {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 
@@ -316,7 +311,6 @@ hr {
 
 #footer {
   margin-top: 50px;
-  font-size: 28px;
 }
 
 #footer > .container {
@@ -325,6 +319,6 @@ hr {
 }
 
 #footer img {
-  min-width: 40%;
-  max-width: 40%;
+  min-width: 30%;
+  max-width: 30%;
 }
