@@ -264,6 +264,10 @@ hr {
   flex-direction: column;
 }
 
+#about-approach p {
+  text-align: justify;
+}
+
 
 
 /* Price and booking -------------------------------- */
