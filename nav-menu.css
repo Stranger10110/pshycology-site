@@ -310,7 +310,7 @@ body {
         padding: 0 4rem;  /* rbt */
         background-color: #81B29A;  /* rbt */
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        position: fixed;  /* rbt - это закрепляет навигацию наверху */
+        /*position: fixed;  !* rbt - это закрепляет навигацию наверху *!*/
         z-index: 10000;
     }
     #cs-navigation .cs-container {
