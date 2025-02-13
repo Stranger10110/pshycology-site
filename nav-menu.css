@@ -65,7 +65,7 @@ body {
 <---     Mobile Navigation      -->
 <--- -------------------------- -*/
 /* Mobile - 1023px */
-@media only screen and (max-width: 63.9375rem) {
+@media only screen and (max-width: 1094px) {
     body.cs-open {
         overflow: hidden;
     }
@@ -73,7 +73,7 @@ body {
         width: 100%;
         /* prevents padding and border from affecting height and width */
         box-sizing: border-box;
-        padding: 0.75rem 1rem;
+        padding: 0.75rem 0;
         background-color: #81B29A;  /* rbt */
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         position: fixed;  /* rbt - это закрепляет навигацию наверху */
@@ -89,7 +89,7 @@ body {
         display: block;
         position: absolute;
         top: 100%;
-        right: 0;
+        /*right: 0;*/
         z-index: -11;
         transition: width 0.5s, opacity 0.3s;
         -webkit-backdrop-filter: blur(10px);
@@ -111,7 +111,7 @@ body {
     #cs-navigation .cs-container {
         width: 100%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         align-items: center;
     }
     #cs-navigation .cs-logo {
@@ -140,7 +140,7 @@ body {
         /* 44px - 48px */
         /*width: clamp(2.75rem, 6vw, 3rem); */  /* rbt */
         /*height: clamp(2.75rem, 6vw, 3rem);*/
-        margin: 0 0 0 auto;
+        margin: 0 0 0 1rem;
         background-color: transparent;
         border: none;
         border-radius: 0.25rem;
@@ -206,13 +206,13 @@ body {
         opacity: 0;
         position: absolute;
         top: 100%;
-        right: 0;
+        /*right: 0;*/
         left: auto;
         z-index: -1;
         overflow: hidden;
         transform: scaleX(0);
         transition: transform 0.4s, opacity 0.3s;
-        transform-origin: top right;
+        transform-origin: top left;
     }
     #cs-navigation .cs-ul {
         width: auto;
@@ -220,7 +220,7 @@ body {
         height: 65vh;
         margin: 0;
         /* 28px - 40px */
-        padding: 3rem clamp(1.75rem, 3vw, 2.5rem) 2rem 4.375rem;
+        padding: 3rem clamp(1.75rem, 3vw, 2.5rem) 2rem 2.2rem;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -229,7 +229,7 @@ body {
         overflow: scroll;
     }
     #cs-navigation .cs-li {
-        text-align: right;
+        text-align: left;
         list-style: none;
         width: 100%;
         margin-right: 0;
@@ -267,7 +267,7 @@ body {
     }
     #cs-navigation .cs-li-link {
         /* 16px - 24px */
-        font-size: clamp(1rem, 2.5vw, 1.5rem);
+        /*font-size: clamp(1rem, 2.5vw, 1.5rem);*/
         line-height: 1.2em;
         text-decoration: none;
         margin: 0;
@@ -298,7 +298,7 @@ body {
 <---     Desktop Navigation     -->
 <--- -------------------------- -*/
 /* Small Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 1095px) {
     #main-description img  {
         width: 40vw;
     }
