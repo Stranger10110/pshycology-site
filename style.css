@@ -107,7 +107,6 @@ hr {
   font-size: 14px;
   color: #FFF;
   text-decoration: none;
-
 }
 .telegram-button:hover {
   background-color: #484b6a;
@@ -123,25 +122,22 @@ hr {
 
 /* Education -------------------------------- */
 
-/*#education .heading-container {*/
-/*  margin-bottom: 5px;*/
-/*}*/
-
 #education > .container {
   flex-direction: column;
 }
 
+#education > .container > .container {
+  margin: 0;
+}
+
 #education .container:nth-child(2) {
-  min-height: 660px;  /* чтобы блок не прыгал, когда меняется картинка */
   gap: 25px;
 }
 
 .edu-text {
   display: flex;
   flex-direction: column;
-  /*justify-content: center;*/
-  min-width: 47%;
-  max-width: 47%;
+  flex: 0 0 48%;
   gap: 40px;
 }
 
@@ -150,8 +146,10 @@ hr {
 }
 
 .gallery-container {
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  /*min-height: 650px;  !* чтобы блок не прыгал, когда меняется картинка *!*/
+  /* пока убрал, сделав картинки одинакового размера */
 }
 
 .gallery-container button {
@@ -164,14 +162,11 @@ hr {
     display: flex;
     justify-content: center;
 
-    height: 100%;
-    align-items: center;
-
     transition: all 1s;
 }
 
 .gallery img {
-    width: 84%;
+    width: 97%;
     display: none;
 
     opacity: 0;
@@ -189,15 +184,13 @@ hr {
 }
 
 .arrow {
+    flex: 0 0 auto;
+    max-height: 45px;
     cursor: pointer;
-    position: absolute;
-    top: 43%;
-    width: auto;
     padding: 10px;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
-    z-index: 10;
 }
 
 .left {
@@ -213,7 +206,7 @@ hr {
 
 #types-of-work > .container {
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 #types-of-work .heading-container {
@@ -222,20 +215,15 @@ hr {
 
 #types-of-work > .container > p {
   text-align: center;
-  margin-bottom: 10px;
 }
-
-/* TODO: remove */
-/*  margin-bottom: 30px;*/
-/*}*/
-/*#types-of-work > .container > p:last-child {*/
-/*  margin-bottom: 0;*/
-/*}*/
 
 .work-types {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  row-gap: 15px;
 }
 
 #types-of-work .work-types p:nth-child(2n+1) {
@@ -246,14 +234,8 @@ hr {
   font-size: 17px;
 }
 
-.work-types div {
-  flex: 1 0 calc(25% - 10px);
-}
-.work-types p:nth-child(1) {
-  margin: 0;
-}
-.work-types p:nth-child(2) {
-  margin: 0 1px 20px;
+.work-types > div {
+  flex: 1 1 33.3%;
 }
 
 
@@ -263,39 +245,39 @@ hr {
   flex-direction: column;
 }
 
-#about-approach p {
+.approach-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   text-align: justify;
 }
 
-
-
 /* Price and booking -------------------------------- */
+
+#price-and-booking .heading-container {
+  margin-bottom: 0;
+}
 
 #price-and-booking > .container {
   flex-direction: column;
-}
-
-#price-and-booking > .container > p {
   text-align: center;
+  gap: 20px;
 }
 
-#price-and-booking > .container > p:nth-child(2) {
-  margin-bottom: 10px;
-}
-
-#price-and-booking .work-types div:nth-child(1) p {
-  padding-left: 50%;
-}
-#price-and-booking .work-types div:nth-child(2) p {
-  padding-right: 50%;
-}
-
-#price-and-booking .work-types p:nth-child(2) {
-  margin: 0;
+.prices {
+  display: flex;
+  justify-content: center;
+  gap: 130px;
+  /*margin-top: 30px;*/
+  /*margin-bottom: 20px;*/
 }
 
 #price-and-booking .fa-ruble-sign {
   font-size: 16px;
+}
+
+#price-and-booking .telegram-button .fa-brands {
+  font-size: 25px;
 }
 
 

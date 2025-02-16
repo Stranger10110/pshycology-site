@@ -1,55 +1,171 @@
-/*@media screen and (max-width: 928px) {*/
-/*  .heading {*/
-/*    font-size: 32px;*/
-/*  }*/
+/* Tablet -------------------------------- */
+@media only screen and (max-width: 1095px) {
 
-/*  .subheading {*/
-/*    font-size: 80px;*/
-/*  }*/
-/*}*/
+  .container {
+    margin: 0 2.2rem;
+  }
 
-/*@media screen and (max-width: 465px) {*/
-/*  .page-header .container {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*  }*/
-/*  .page-header a {*/
-/*    margin-top: 10px;*/
-/*  }*/
-/*}*/
+  hr {
+    max-width: 85%;
+  }
 
-/*@media screen and (max-width: 430px) {*/
-/*  .skills > div {*/
-/*    flex: 80%;*/
-/*    justify-content: start;*/
-/*    margin-bottom: 15px;*/
-/*  }*/
-/*}*/
+  /* Main description -------------------------------- */
 
-/* Mobile - 1023px -------------------------------- */
-@media only screen and (max-width: 63.9375rem) {
+  #main-description {
+    padding-top: 67px;
+    margin-bottom: 15px;
+  }
 
-/* Main description -------------------------------- */
-  .main-description>.container {
+  .main-text > .heading {
+    text-align: center;
+  }
+
+  .main-text > .heading br {
+    display: none;
+  }
+
+  .main-text p br {
+    display: none;
+  }
+
+  #main-description>.container {
     flex-direction: column;
     align-items: center;
   }
 
-  .main-description .main-img {
+  #main-description .main-img {
     display: flex;
     justify-content: center;
-    width: 60%;
+    min-width: 50%;
+    max-width: 50%;
   }
 
   .main-text {
-    margin: 0 2rem;
     gap: 10px;
+  }
+
+  .main-text .telegram-button-div {
+    margin-top: 5px;
     text-align: center;
   }
 
+  /* Types of work -------------------------------- */
+
+  #types-of-work > .container > p br {
+    display: none;
+  }
+
+  #types-of-work .work-types p:nth-child(2n) {
+    font-size: 90%;
+  }
+
+  .work-types > div {
+    flex: 1 1 50%;
+  }
+
+  /* About approach -------------------------------- */
+
+  #about-approach p br {
+    display: none;
+  }
+
+  /* Education -------------------------------- */
+
+  #education .container {
+    flex-direction: column;
+    align-items: center;
+    /*margin: 0 1rem;*/
+  }
+
+  .edu-text {
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  .gallery-container {
+    margin: 0 2rem;
+    max-width: 75%;
+  }
+
+  /* Kinda footer -------------------------------- */
+
+  #footer img {
+    min-width: 40%;
+    max-width: 40%;
+  }
 }
 
-/* Small Desktop - 1024px -------------------------------- */
-@media only screen and (min-width: 64rem) {
 
+/* Mobile -------------------------------- */
+@media only screen and (max-width: 600px) {
+
+  .container {
+    margin: 0 1.2rem;
+  }
+
+  .heading {
+    font-size: 96%;
+  }
+
+  p {
+    font-size: 90%;
+  }
+
+  /* Main description -------------------------------- */
+
+  #main-description .main-img {
+    min-width: 70%;
+    max-width: 70%;
+  }
+
+  .main-text > .heading {
+    font-size: 22px;
+  }
+  .main-text > .heading br {
+    display: none;
+  }
+
+  .telegram-button .fa-brands {
+    font-size: 28px;
+  }
+
+  /* Types of work -------------------------------- */
+
+  #types-of-work .work-types p:nth-child(2n) {
+    font-size: 70%;
+  }
+
+
+  /* Education -------------------------------- */
+
+  .edu-text {
+    font-size: 90%;
+  }
+
+  .gallery-container {
+    margin: 0;
+    max-width: 100%;
+  }
+
+
+  /* Price and booking -------------------------------- */
+
+  .prices {
+    gap: 15vw;
+  }
+
+  .prices > p br {
+    display: none;
+  }
+
+  #price-and-booking .telegram-button .fa-brands {
+    font-size: 22px;
+  }
+
+  /* Kinda footer -------------------------------- */
+
+  #footer img {
+    min-width: 60%;
+    max-width: 60%;
+  }
 }
